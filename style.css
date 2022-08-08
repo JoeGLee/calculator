@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 350px;
+    height: 600px;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.row{
+    display: flex;
+    padding: 0;
+    background-color: gray; 
+}
+
+button{
+    height: 90px;
+    width: 75px;
+    font-size: 20px;
+    background-color: rgb(255, 208, 0);
+    border-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#rowOne{
+    display: flex;
+    gap: 10px;
+    border: none;
+    margin-bottom: 3px;
+
+}
+#rowOne button{
+    height: 60px;
+    width: 130px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#AC{
+    background-color: rgb(218, 63, 63);
+}
+
+#delete{
+    background-color: rgb(48, 48, 196);
+}
+
+.displayContainer{
+    width:300px;
+    height: 100px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5px;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.displayLast{
+    font-size: 20px;
+    text-align: end;
+}
+
+.displayCurrent{
+    font-size: 30px;
+    text-align: end;
+}
+
+.op{
+    background-color: rgb(100, 118, 9);
+}
+
+.op:hover{
+    cursor: pointer;
+    background-color: rgb(175, 194, 81);
+}
+
+.number:hover{
+    cursor: pointer;
+    background-color: rgb(251, 232, 146);
+}
+
+#AC:hover{
+    cursor: pointer;
+    background-color: rgb(218, 134, 134);
+}
+
+#delete:hover{
+    cursor: pointer;
+    background-color: rgb(110, 110, 190);
+}
