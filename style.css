@@ -52,6 +52,15 @@ button{
     border-width: 2px;
 }
 
+#equal{
+    background-color: rgb(229, 138, 81);
+}
+#equal:hover{
+    cursor: pointer;
+    background-color: rgb(244, 187, 151);
+}
+
+
 #AC{
     background-color: rgb(218, 63, 63);
 }

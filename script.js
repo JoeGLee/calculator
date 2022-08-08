@@ -4,6 +4,8 @@ const displayLast = document.querySelector('.displayLast'); // selects display f
 const numberButtons = document.querySelectorAll('.number'); // selects all elements of number buttons through class number on html
 let currentNumber = '';// creates an variable for current number to temp. hold number from .number 
 let previousNumber ='';
+let middleNumber = '';
+
 numberButtons.forEach(numberButton => numberButton.addEventListener('click', ()=>{
     currentNumber = currentNumber + numberButton.textContent;
     displayCurrent.textContent = currentNumber;
@@ -42,10 +44,12 @@ const equal = document.querySelector('#equal');
 
 equal.addEventListener('click', () => {
     if(ops !== ''){
-        displayCurrent.textContent = calculate();
-       
+        middleNumber = currentNumber;
+        currentNumber = calculate(); 
+        displayCurrent.textContent = currentNumber; 
+        displayLast.textContent = previousNumber + ' ' + ops + ' ' + middleNumber;
     }
-    displayLast = previousNumber + ' ' + ops + ' ' + currentNumber;
+    
 
 });
 
